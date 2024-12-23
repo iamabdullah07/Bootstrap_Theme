@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap and font Awo & Boxicon CDN start -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap 5.3 Start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap 5.3 End -->
+    <!-- Bootstrap and font Awo & Boxicon CDN End -->
+    <!-- google fonts-Montserrat start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- google fonts-Montserrat End -->
+    <!-- google fonts-Poppins Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- google fonts-Poppins End -->
+    <!-- google fonts-Open Sans Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- google fonts-Open Sans End -->
+    <!-- Style Sheets Start -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Media.css">
+    <!-- Style Sheets End -->
+
+    <title>Theme Editor</title>
+</head>
+
+<body>
+    <!-- Top Main Nav-Bar Start-->
+    <header class="Top-Header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="logo text-decoration-none d-flex align-items-center " href="#">Append
+                    <span class="dot-color">.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="bx bx-align-right"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                        role="button" aria-expanded="false">
+                                        Sec Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Home</a></li>
+                                        <li><a class="dropdown-item" href="#">About</a></li>
+                                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="get-start">
+                    <a href="#" class="started">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Top Main Nav-Bar End-->
+    <!-- Hero Section Start-->
+    <section class="hero-section">
+        <div class="Bg-img">
+            <img src="img/hero-bg.jpg" alt="" class="img-fluid hero">
+        </div>
+        <div class="container-fluid heading-section">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-sm-12 col-12">
+                    <div class="herro-heading d-flex flex-column align-items-lg-start justify-content-lg-start
+                    align-items-md-center justify-content-md-center align-items-sm-center justify-content-sm-center
+                    align-items-center justify-content-center ms-lg-5 ms-md-4 ms-sm-2 ms-0">
+                        <h1 class="text-lg-start text-md-center text-sm-center text-center">Welcome to Our Website</h1>
+                        <p class="text-lg-start text-md-center text-sm-center text-center">We are team of talented
+                            designers making websites with Bootstrap
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-8 col-sm-8 col-12 m-lg-0 m-md-auto m-sm-auto m-auto">
+                    <div class="hero-box d-flex flex-column align-items-lg-start justify-content-lg-start
+                    align-items-md-center justify-content-md-center align-items-sm-center justify-content-sm-center
+                    align-items-center justify-content-center ms-lg-5 ms-md-4 ms-sm-2 ms-0">
+                        <form class="d-flex rounded" role="search">
+                            <input class="form-control me-2" type="search" aria-label="Search">
+                            <button class="btn form-btn" id="#" type="submit">Subcribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End-->
+    <!-- Web-Logo Section Start-->
+    <section class="web-logos py-4">
+        <div class="container-fluid">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6 gy-4 web-logo">
+                            <img src="Img/client-1.png" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6 gy-4 web-logo">
+                            <img src="Img/client-2.png" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6 gy-4 web-logo">
+                            <img src="Img/client-3.png" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6 gy-4 web-logo">
+                            <img src="Img/client-4.png" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6 gy-4 web-logo">
+                            <img src="Img/client-5.png" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6 gy-4 web-logo">
+                            <img src="Img/client-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Web-Logo Section End-->
+    <!-- About Section Start-->
+    <section class="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 content d-flex align-items-start justify-content-center flex-column">
+                    <h3>About Us</h3>
+                    <h2>Ducimus rerum libero reprehenderit cumque</h2>
+                    <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis
+                        minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt
+                        voluptatem tempora deleniti soluta.</p>
+                    <a href="#" class="read-more"><span>Read More</span><i class="fa-solid fa-arrow-right ps-1"></i></a>
+                </div>
+                <div class="col-xl-7">
+                    <div class="row gy-4 icon-boxes">
+
+                        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon-box">
+                                <i class='bx bxs-buildings'></i>
+                                <h3>Eius provident</h3>
+                                <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem
+                                </p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box">
+                                <i class='bx bx-stats'></i>
+                                <h3>Rerum aperiam</h3>
+                                <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia
+                                </p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-box">
+                                <i class='bx bx-command'></i>
+                                <h3>Veniam omnis</h3>
+                                <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur
+                                    corrupti</p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box">
+                                <i class='bx bx-line-chart'></i>
+                                <h3>Delares sapiente</h3>
+                                <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis
+                                    quideme lorenda</p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End-->
+    <!-- About Pick Start-->
+    <section class="About-pick">
+        <div class="container-fluid p-0">
+            <div class="col-12">
+                <div class="stats">
+                    <img src="Img/stats-bg.jpg" alt="">
+
+                    <div class="container position-relative aos-init aos-animate" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="row gy-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span data-purecounter-start="0" data-purecounter-end="232"
+                                        data-purecounter-duration="0" class="purecounter">232</span>
+                                    <p>Clients</p>
+                                </div>
+                            </div>
+                            <!-- End Stats Item -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span data-purecounter-start="0" data-purecounter-end="521"
+                                        data-purecounter-duration="0" class="purecounter">521</span>
+                                    <p>Projects</p>
+                                </div>
+                            </div>
+                            <!-- End Stats Item -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span data-purecounter-start="0" data-purecounter-end="1453"
+                                        data-purecounter-duration="0" class="purecounter">1453</span>
+                                    <p>Hours Of Support</p>
+                                </div>
+                            </div>
+                            <!-- End Stats Item -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="stats-item text-center w-100 h-100">
+                                    <span data-purecounter-start="0" data-purecounter-end="32"
+                                        data-purecounter-duration="0" class="purecounter">32</span>
+                                    <p>Workers</p>
+                                </div>
+                            </div>
+                            <!-- End Stats Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- About Pick End-->
+    <!-- Service Section Start-->
+    <section class="servive pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center d-flex align-items-center justify-content-center">Service</h2>
+                <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4 pt-4">
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item d-flex align-items-center justify-content-center ">
+                        <div class="icon flex-shrink-0 d-flex align-items-center justify-content-center "><i
+                                class='bx bx-envelope'></i></div>
+                        <div>
+                            <h4 class="title"><a class="stretched-link">Lorem Ipsum</a></h4>
+                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                excepturi sint occaecati cupiditate non provident</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item d-flex align-items-center justify-content-center">
+                        <div class="icon flex-shrink-0 d-flex align-items-center justify-content-center "><i
+                                class="fa-regular fa-square-check"></i></div>
+                        <div>
+                            <h4 class="title"><a class="stretched-link">Dolor Sitema</a></h4>
+                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat tarad limino ata</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item d-flex align-items-center justify-content-center">
+                        <div class="icon flex-shrink-0 d-flex align-items-center justify-content-center "><i
+                                class='bx bx-bar-chart-alt'></i></div>
+                        <div>
+                            <h4 class="title"><a class="stretched-link">Sed ut perspiciatis</a></h4>
+                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item d-flex align-items-center justify-content-center">
+                        <div class="icon flex-shrink-0 d-flex align-items-center justify-content-center "><i
+                                class='bx bxs-binoculars'></i></div>
+                        <div>
+                            <h4 class="title"><a class="stretched-link">Magni Dolores</a></h4>
+                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-item d-flex align-items-center justify-content-center">
+                        <div class="icon flex-shrink-0 d-flex align-items-center justify-content-center "><i
+                                class='bx bx-sun'></i></div>
+                        <div>
+                            <h4 class="title"><a class="stretched-link">Nemo Enim</a></h4>
+                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atque</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-item d-flex align-items-center justify-content-center">
+                        <div class="icon flex-shrink-0 d-flex align-items-center justify-content-center "><i
+                                class='bx bx-calendar'></i></div>
+                        <div>
+                            <h4 class="title"><a class="stretched-link">Eiusmod Tempor</a></h4>
+                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                                tempore, cum soluta nobis est eligendi</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+            </div>
+        </div>
+    </section>
+    <!-- Service Section End-->
+    <!-- Features Section Start-->
+    <section class="Features py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center d-flex align-items-center justify-content-center">Features</h2>
+                <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="container-fluid pt-5">
+                <div class="row">
+                    <div class="col-lg-5 order-2 Feature-data order-lg-1 aos-init aos-animate
+                    d-flex align-items-start justify-content-center flex-column" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <h3>Corporis temporibus maiores provident</h3>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident.
+                        </p>
+                        <a href="#" class="btn btn-get-started">Get Started</a>
+                    </div>
+                    <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center aos-init aos-animate"
+                        data-aos="zoom-out" data-aos-delay="100">
+                        <div class="image-stack">
+                            <img src="img/features-light-1.jpg" alt="" class="stack-front img-fluid">
+                            <img src="img/features-light-2.jpg" alt="" class="stack-back img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section End-->
+    <!-- Coundown Section Start-->
+    <section class="coundown">
+        <div class="container">
+            <div class="row gy-4 align-items-stretch justify-content-between features-item pt-5">
+                <div class="col-lg-6 d-flex align-items-center features-img-bg aos-init aos-animate"
+                    data-aos="zoom-out">
+                    <img src="img/features-light-3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center flex-column aos-init aos-animate coundown-data"
+                    data-aos="fade-up">
+                    <h3>Sunt consequatur ad ut est nulla</h3>
+                    <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit
+                        aut quia voluptatem hic voluptas dolor doloremque.</p>
+                    <ul>
+                        <li><i class='bx bx-check'></i><span>Ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.</span></li>
+                        <li><i class='bx bx-check'></i><span> Duis aute irure dolor in reprehenderit in voluptate
+                                velit.</span></li>
+                        <li><i class='bx bx-check'></i><span>Facilis ut et voluptatem aperiam. Autem soluta ad
+                                fugiat</span>.</li>
+                    </ul>
+                    <a href="#" class="btn btn-get-started align-self-start">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Coundown Section End-->
+    <!-- Portfolio Section Start-->
+    <section class="Portfolio py-5">
+        <div class="container">
+            <div class="section-title pb-5">
+                <h2 class="text-center d-flex align-items-center justify-content-center">Portfolio</h2>
+                <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="portfolio-manu d-flex align-items-center justify-content-center">
+                <a href="#" class="active">All</a>
+                <a href="#">App</a>
+                <a href="#">Card</a>
+                <a href="#">Web</a>
+            </div>
+        </div>
+        <div class="containter-box">
+            <div class="garlery-box">
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-4.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-7.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-2.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-5.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-8.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-3.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-6.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-9.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div class="container Portfolio-gallery pt-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 position-relative">
+                    <div class="gallery-img-1 gallery">
+                        <img src="Img/masonry-portfolio-1.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+                            <div class="portfolio-heading d-flex flex-column m-auto">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+                            <div class="portfolio-link-icon d-flex m-auto">
+                                <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                                <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="gallery-img-2 gallery">
+                        <img src="Img/masonry-portfolio-2.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+                            <div class="portfolio-heading d-flex flex-column m-auto">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+                            <div class="portfolio-link-icon d-flex m-auto">
+                                <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                                <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="gallery-img-3 gallery">
+                        <img src="Img/masonry-portfolio-3.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+                            <div class="portfolio-heading d-flex flex-column m-auto">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+                            <div class="portfolio-link-icon d-flex m-auto">
+                                <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                                <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="gallery-img-4 gallery">
+                        <img src="Img/masonry-portfolio-4.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+                            <div class="portfolio-heading d-flex flex-column m-auto">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+                            <div class="portfolio-link-icon d-flex m-auto">
+                                <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                                <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="gallery-img-6 gallery">
+                        <img src="Img/masonry-portfolio-5.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+                            <div class="portfolio-heading d-flex flex-column m-auto">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+                            <div class="portfolio-link-icon d-flex m-auto">
+                                <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                                <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="gallery-img-6 gallery">
+                        <img src="Img/masonry-portfolio-6.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+                            <div class="portfolio-heading d-flex flex-column m-auto">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+                            <div class="portfolio-link-icon d-flex m-auto">
+                                <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                                <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="gallery-img-7 gallery">
+                        <img src="Img/masonry-portfolio-7.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+                            <div class="portfolio-heading d-flex flex-column m-auto">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+                            <div class="portfolio-link-icon d-flex m-auto">
+                                <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                                <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="container pt-3">
+            <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
+                style="position: relative; height: 1079.31px;">
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+                    style="position: absolute; left: 0px; top: 0px;">
+                    <img src="img/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-product im-2"
+                    style="position: absolute; left: 379.99px; top: 0px;">
+                    <img src="img/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>Product 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-branding"
+                    style="position: absolute; left: 759.98px; top: 0px;">
+                    <img src="img/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>Branding 1</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-app"
+                    style="position: absolute; left: 759.98px; top: 224.24px;">
+                    <img src="img/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 2</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-product"
+                    style="position: absolute; left: 379.99px; top: 262.688px;">
+                    <img src="img/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>Product 2</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-branding"
+                    style="position: absolute; left: 0px; top: 384.875px;">
+                    <img src="img/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>Branding 2</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-app"
+                    style="position: absolute; left: 759.98px; top: 483.636px;">
+                    <img src="img/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>App 3</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-product"
+                    style="position: absolute; left: 759.98px; top: 738.709px;">
+                    <img src="img/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>Product 3</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item isotope-item filter-branding"
+                    style="position: absolute; left: 379.99px; top: 818.834px;">
+                    <img src="img/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <div class="portfolio-heading d-flex flex-column m-auto">
+                            <h4>Branding 3</h4>
+                            <p>Lorem ipsum, dolor sit</p>
+                        </div>
+                        <div class="portfolio-link-icon d-flex m-auto">
+                            <a href="img/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                                class="glightbox preview-link"><i class='bx bx-zoom-in'></i></a>
+                            <a title="More Details" class="details-link"><i class='bx bx-link'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+
+    </section>
+    <!-- Portfolio Section End-->
+    <!-- Pricing Section Start-->
+    <section class="Pricing py-5">
+        <div class="container p-0">
+            <div class="section-title pb-5">
+                <h2 class="text-center d-flex align-items-center justify-content-center">Pricing</h2>
+                <p class="text-center pb-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
+                    velit
+                </p>
+            </div>
+            <div class="container aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                <div class="row g-4">
+                    <div class="col-lg-4 p-0">
+                        <div class="pricing-item">
+                            <h3 class="text-center mb-4">Free Plan</h3>
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <i class='bx bx-cube-alt'></i>
+                            </div>
+                            <h4 class="text-center"><sup>$</sup>0<span> / month</span></h4>
+                            <ul>
+                                <li><i class='bx bx-check'></i> <span>Quam adipiscing vitae proin</span></li>
+                                <li><i class='bx bx-check'></i> <span>Nec feugiat nisl pretium</span></li>
+                                <li><i class='bx bx-check'></i> <span>Nulla at volutpat diam uteera</span></li>
+                                <li class="na"><i class="fa-solid fa-xmark"></i> <span>Pharetra massa massa
+                                        ultricies</span></li>
+                                <li class="na"><i class="fa-solid fa-xmark"></i> <span>Massa ultricies mi quis
+                                        hendrerit</span></li>
+                            </ul>
+                            <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+                        </div>
+                    </div><!-- End Pricing Item -->
+
+                    <div class="col-lg-4 p-0">
+                        <div class="pricing-item featured">
+                            <h3 class="text-center mb-4">Business Plan</h3>
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <i class='bx bx-rocket'></i>
+                            </div>
+
+                            <h4 class="text-center"><sup>$</sup>29<span> / month</span></h4>
+                            <ul>
+                                <li><i class='bx bx-check'></i> <span>Quam adipiscing vitae proin</span></li>
+                                <li><i class='bx bx-check'></i> <span>Nec feugiat nisl pretium</span></li>
+                                <li><i class='bx bx-check'></i> <span>Nulla at volutpat diam uteera</span></li>
+                                <li><i class='bx bx-check'></i> <span>Pharetra massa massa ultricies</span></li>
+                                <li><i class='bx bx-check'></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                            </ul>
+                            <div class="text-center bg-btn-col"><a href="#" class="buy-btn">Buy Now</a></div>
+                        </div>
+                    </div><!-- End Pricing Item -->
+
+                    <div class="col-lg-4 p-0">
+                        <div class="pricing-item">
+                            <h3 class="text-center mb-4">Developer Plan</h3>
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <i class='bx bxs-paper-plane'></i>
+                            </div>
+                            <h4 class="text-center"><sup>$</sup>49<span> / month</span></h4>
+                            <ul>
+                                <li><i class='bx bx-check'></i> <span>Quam adipiscing vitae proin</span></li>
+                                <li><i class='bx bx-check'></i> <span>Nec feugiat nisl pretium</span></li>
+                                <li><i class='bx bx-check'></i> <span>Nulla at volutpat diam uteera</span></li>
+                                <li><i class='bx bx-check'></i> <span>Pharetra massa massa ultricies</span></li>
+                                <li><i class='bx bx-check'></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                            </ul>
+                            <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+                        </div>
+                    </div><!-- End Pricing Item -->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section End-->
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
